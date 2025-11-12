@@ -1,0 +1,344 @@
+<!--
+  Single-file Portfolio (index.html)
+  - Uses styles.css (place in same folder)
+  - Make sure Harsh_Kumar_Singh_CV.docx and h.png are in same folder
+  - Projects assumed at: projects/tic-tac-toe/index.html, projects/calculator/index.html,
+    projects/rock-paper-scissors/index.html, projects/face-recognition/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harsh Singh — Portfolio</title>
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="theme-color" content="#081024" />
+</head>
+<body>
+  <div class="site">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-name">Harsh Kumar <span> Singh</span></div>
+        <div class="brand-role">• Frontend Developer • AI Enthusiast</div>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
+          <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i><span>Skills</span></a></li>
+          <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i><span>Projects</span></a></li>
+          <li><a href="#tools" class="nav-link"><i class="fas fa-tools"></i><span>Tools</span></a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="socials">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">© <span id="year"></span> Harsh Kumar Singh</div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- HOME -->
+      <section id="home" class="section hero reveal">
+        <div class="hero-left">
+          <div class="greeting">Hii — I'm</div>
+          <h1 class="hero-title">Harsh <span>Singh</span></h1>
+          <p class="hero-sub">Learner • Enthusiastic about Web Development & AI</p>
+          <p class="hero-desc">
+            From Varanasi (Kashi). Pursuing MCA at Lovely Professional University (LPU). I love turning ideas into interactive web experiences,
+            learning by building projects, and exploring AI-powered solutions.
+          </p>
+
+          <div class="hero-ctas">
+            <!-- Download CV (DOCX) -->
+            <a class="btn btn-primary" href="Harsh_Kumar_Singh_CV.docx" download="Harsh_Kumar_Singh_CV.docx">Download CV</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>Projects:- </strong><span>4+</span></div>
+            <div><strong>Learning:- </strong><span>MERN / AI</span></div>
+            <div><strong>Location:-</strong><span> Varanasi, 221208, INDIA</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="avatar-wrap">
+            <img src="hs.png" alt="Harsh Singh" class="avatar" />
+            <div class="avatar-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about reveal">
+        <div class="section-inner">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p><strong>Hi, I’m Harsh Kumar Singh.</strong> An enthusiastic learner and aspiring <strong>Python Developer</strong> and <strong>Web Developer</strong>. I enjoy turning ideas into practical applications using clean code and thoughtful design.</p>
+
+              <h3>Education</h3>
+              <p>BCA — Mahatma Gandhi Kashi Vidyapith, Varanasi.
+                 <br>Currently pursuing My Masters MCA - at Lovely Professional University (LPU).</br></p>
+
+              <h3>Interests & Goals</h3>
+              <p>Web Development (HTML, CSS, JS, MERN basics), Python, and Artificial Intelligence. My goal is to build useful, polished web apps and grow as a professional developer.</p>
+            </div>
+
+            <div class="about-list">
+              <h3>Experience / Projects</h3>
+              <ul>
+                <li>Face Recognition Student Attendance System — Python & AI</li>
+                <li>Tic Tac Toe (HTML/CSS/JS)</li>
+                <li>Rock Paper Scissors (HTML/CSS/JS)</li>
+                <li>Calculator App (HTML/CSS/JS)</li>
+              </ul>
+
+              <h3>Personal</h3>
+              <p>I love learning by doing, exploring new tech, and building small projects that teach me more about real-world development.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section skills reveal">
+        <div class="section-inner">
+          <h2 class="section-title">Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Python (Basics)</div>
+            <div class="skill-card">OOP Concepts</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">DBMS - MYSQL</div>
+            <div class="skill-card">MS Office</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section projects reveal">
+        <div class="section-inner">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="project-grid">
+            <!-- Tic Tac Toe -->
+            <article class="project">
+              <div class="project-thumb">
+                <div class="thumb-emoji">❌⭕</div>
+              </div>
+              <div class="project-body">
+                <h3>Tic Tac Toe</h3>
+                <p>Classic Tic Tac Toe built with HTML, CSS, and JavaScript — local multiplayer & clean UI.</p>
+                <div class="project-actions">
+                  <a class="project-btn" href="Tic Tac Toe/index.html" target="_blank" rel="noopener">View Live</a>
+                  <a class="project-btn ghost" href="Tic Tac Toe/index.html" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Calculator -->
+            <article class="project">
+              <div class="project-thumb">
+                <div class="thumb-emoji">🧮</div>
+              </div>
+              <div class="project-body">
+                <h3>Calculator</h3>
+                <p>Responsive calculator supporting basic arithmetic. Clean layout and precise inputs.</p>
+                <div class="project-actions">
+                  <a class="project-btn" href="Calcculator_project/index.html" target="_blank" rel="noopener">View Live</a>
+                  <a class="project-btn ghost" href="Calcculator_project/index.html" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- QR Code Generator -->
+            <article class="project">
+              <div class="project-thumb">
+                <div class="thumb-emoji">📄</div>
+              </div>
+              <div class="project-body">
+                <h3>QR Code Generator</h3>
+                <p>Make the QR Code by text or Paste the URL Link.</p>
+                <div class="project-actions">
+                  <a class="project-btn" href="QR Code Generator/index1.html" target="_blank" rel="noopener">View Live</a>
+                  <a class="project-btn ghost" href="QR Code Generator/index1.html" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+            </article>
+             
+            <!-- Rock Paper Scissors -->
+            <article class="project">
+              <div class="project-thumb">
+                <div class="thumb-emoji">✂️📄🪨</div>
+              </div>
+              <div class="project-body">
+                <h3>Rock Paper Scissors</h3>
+                <p>Interactive browser game with intuitive UI and responsive design.</p>
+                <div class="project-actions">
+                  <a class="project-btn" href="Rock Paper Scissors/index.html" target="_blank" rel="noopener">View Live</a>
+                  <a class="project-btn ghost" href="Rock Paper Scissors/index.html" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Face Recognition -->
+            <article class="project">
+              <div class="project-thumb">
+                <div class="thumb-emoji">🧠</div>
+              </div>
+              <div class="project-body">
+                <h3>Face Recognition Attendance</h3>
+                <p>Python & AI project: Student attendance system using facial recognition. (Run locally — Python environment required)</p>
+                <div class="project-actions">
+                  <a class="project-btn" href="FINAL PROJECT (1).pdf" target="_blank" rel="noopener">View Project</a>
+                  <a class="project-btn ghost" href="FINAL PROJECT (1).pdf" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section id="tools" class="section tools reveal">
+        <div class="section-inner">
+          <h2 class="section-title">Tools & Technology</h2>
+
+          <div class="tools-grid">
+            <div class="tool-card"><i class="fas fa-laptop-code"></i><span>VS Code</span></div>
+            <div class="tool-card"><i class="fas fa-microchip"></i><span>Turbo C++</span></div>
+            <div class="tool-card"><i class="fas fa-video"></i><span>GitHub</span></div>
+            <div class="tool-card"><i class="far fa-file-alt"></i><span>Microsoft Office</span></div>
+            <div class="tool-card"><i class="fas fa-chalkboard-teacher"></i><span>Canvas</span></div>
+            <div class="tool-card"><i class="fas fa-video"></i><span>VN Editor</span></div>
+            <div class="tool-card"><i class="fas fa-video"></i><span>Lightroom Photo</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact reveal">
+        <div class="section-inner">
+          <h2 class="section-title">Contact</h2>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Get in touch</h3>
+              <p>If you'd like to collaborate or have any questions, send a message or connect on social media.</p>
+
+              <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:harshku.143singh@gmail.com">harshku.143singh@gmail.com</a></li>
+
+                <li><strong>Phone:</strong> <a href="tel:+919956129557">+91 99561 29557</a></li>
+                <li><strong>Location:</strong> Varanasi, 221208, India</li>
+              </ul>
+
+              <div class="socials-large">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <form class="contact-form" action="mailto:harshku.143singh@example.com" method="post" enctype="text/plain">
+              <label>
+                <span>Name</span>
+                <input type="text" name="Name" required>
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="Email" required>
+              </label>
+
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="Phone">
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="Message" rows="5" required></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="reset" class="btn btn-ghost">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>Designed & built by <strong>Harsh Singh</strong> • <a href="Harsh_Kumar_Singh_CV.docx" download="Harsh_Kumar_Singh_CV.docx">Download CV</a></div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script>
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll + active nav
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // update active state
+        document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Highlight nav on scroll (IntersectionObserver)
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { threshold: 0.45 });
+    sections.forEach(s => observer.observe(s));
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(r => revealObserver.observe(r));
+  </script>
+</body>
+</html>
